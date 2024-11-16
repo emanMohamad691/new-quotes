@@ -1,0 +1,72 @@
+:root {
+    --header-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --main-font: 'Times New Roman', Times, serif;
+    --main-color: #3C3D37;
+    --special-color: #ff8800;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--special-color);
+    font-family: var(--header-font);
+}
+
+p {font-size: 1.1rem ;}
+
+button {
+    border: 2px solid var(--special-color);
+    outline: none;
+    background-color: transparent;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+button:hover {
+   
+    background-color: var(--special-color);
+}
+
+.image {
+    animation: move 1s  ;
+    -webkit-animation: move 1.5s alternate infinite  ;
+}
+
+@keyframes move {
+    100%{ transform:translatey(10px) ; -webkit-transform:translatey(10px) ; -moz-transform:translatey(10px) ; -ms-transform:translatey(10px) ; -o-transform:translatey(10px) ; }
+}
+
+/*! media query */
+
+/* *sm */
+@media (min-width:576px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    p {font-size: 1.5rem ;}
+}
+
+/* *md */
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 4.2rem;
+    }
+    
+    p {font-size: 2rem ;}
+}
+
+/* *lg */
+
+@media (min-width:992px) {
+    p{font-size: 1.5rem;}
+}
+

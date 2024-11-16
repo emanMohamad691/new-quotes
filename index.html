@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes App</title>
+    <link rel="shortcut icon" href="image/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="min-vh-100">
+    
+    <header>
+        <div class="container min-vh-100 py-5 ">
+            <div class="row shadow-lg flex-column flex-xl-row align-items-center justify-content-center min-vh-100  gy-md-2  ">
+                <div class="col-lg-6 text-center order-md-1 order-xl-0 mt-xl-5">
+                    <div>
+                        <h1 class="text-capitalize fw-bold mb-3">Quote of the Day</h1>
+                        <p class="mb-3">Press the button below to recieve a random quote!</p>
+                        <button onclick="quotes()" class="text-capitalize px-3 py-2 rounded mb-3">New Quotes</button>
+                        <p class="mb-3 w-75 m-auto" id="quote"></p></div>
+                </div>
+
+                <div class="d-none d-md-block col-lg-6 ">
+                    <div class="image">
+                        <img src="image/undraw_Reading_re_29f8.png" class="w-100" alt="read quote">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
